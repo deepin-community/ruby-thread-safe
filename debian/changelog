@@ -1,0 +1,76 @@
+ruby-thread-safe (0.3.6-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>  Mon, 06 Jun 2022 14:42:58 +0800
+
+ruby-thread-safe (0.3.6-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+
+  [ Antonio Terceiro ]
+  * Remove myself from Uploaders:
+  * New upstream version 0.3.6
+  * Refresh packaging files with `dh-make-ruby -w`
+  * Bump Standards-Version to 4.1.3 (no changes needed)
+  * Add ruby-simplecov and ruby-coveralls to Build-Depends, to avoid having to
+    patch simplecov/coveralls usage out
+  * Drop all patches, not needed anymore
+  * Point Vcs-* to salsa
+  * debian/watch: switch to https://
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 23 Feb 2018 16:06:32 -0300
+
+ruby-thread-safe (0.3.5-3) unstable; urgency=medium
+
+  * Team upload
+  * debian/ruby-tests.rake: exclude test/test_cache_loops.rb, which is a
+    stress test that is maybe causing issues on the buildd.
+  * debian/rules: remove coverage/ on clean
+  * add missing Build-Dependencies on ruby-minitest and rake
+  * Update packaging with a new dh-make-ruby run
+
+ -- Antonio Terceiro <terceiro@debian.org>  Wed, 04 Nov 2015 09:12:28 -0200
+
+ruby-thread-safe (0.3.5-2) unstable; urgency=medium
+
+  * Team upload
+  * Upload to unstable.
+  * Switch test runner to rake
+
+ -- Antonio Terceiro <terceiro@debian.org>  Tue, 03 Nov 2015 17:09:44 -0200
+
+ruby-thread-safe (0.3.5-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Refresh patches.
+  * Add ruby-minitest-reporters to build deps.
+  * Bump standards version to 3.9.6 (no changes).
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 03 Aug 2015 12:02:48 +0530
+
+ruby-thread-safe (0.3.3-1) unstable; urgency=medium
+
+  * New upstream version 0.3.3
+  * Update patches for 0.3.3 release
+
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 29 Apr 2014 12:39:25 +0200
+
+ruby-thread-safe (0.1.3+dfsg-1) unstable; urgency=low
+
+  [ Ondřej Surý ]
+  * Team upload
+  * Initial release (Closes: #720314)
+    - makes ruby-activesupport-4.0 installable (Closes: #719766)
+
+  [ Cédric Boutillier ]
+  * add deactive_test_hash_ruby20.patch: mark as pending a test known to fail
+    with Ruby 2.0.
+  * source repacked to remove the included jar file.
+
+ -- Cédric Boutillier <boutil@debian.org>  Sun, 20 Oct 2013 01:44:05 +0200
